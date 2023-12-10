@@ -1,6 +1,8 @@
 #include <iostream>
 
+using namespace std;
 int main() {
-    std::cout << "This is module 1!" << std::endl;
+    cout << "This is module 1!" << endl;
+    int nig;
     return 0;
 }

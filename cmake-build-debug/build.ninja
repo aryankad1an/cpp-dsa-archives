@@ -71,37 +71,6 @@ build module01: CXX_EXECUTABLE_LINKER__module01_Debug CMakeFiles/module01.dir/mo
   TARGET_FILE = module01
   TARGET_PDB = module01.dbg
 
-# =============================================================================
-# Object build statements for EXECUTABLE target module02
-
-
-#############################################
-# Order-only phony target for module02
-
-build cmake_object_order_depends_target_module02: phony || CMakeFiles/module02.dir
-
-build CMakeFiles/module02.dir/module02.cpp.o: CXX_COMPILER__module02_Debug /Users/aryan/Documents/Computer$ Science$ Stuff/The$ C++/Love$ Babbar$ DSA/module02.cpp || cmake_object_order_depends_target_module02
-  DEP_FILE = CMakeFiles/module02.dir/module02.cpp.o.d
-  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -fcolor-diagnostics -std=gnu++2b
-  OBJECT_DIR = CMakeFiles/module02.dir
-  OBJECT_FILE_DIR = CMakeFiles/module02.dir
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target module02
-
-
-#############################################
-# Link the executable module02
-
-build module02: CXX_EXECUTABLE_LINKER__module02_Debug CMakeFiles/module02.dir/module02.cpp.o
-  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk
-  OBJECT_DIR = CMakeFiles/module02.dir
-  POST_BUILD = :
-  PRE_LINK = :
-  TARGET_FILE = module02
-  TARGET_PDB = module02.dbg
-
 
 #############################################
 # Utility command for edit_cache
@@ -136,7 +105,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/aryan/Documents/Computer Science Stuff/The C++/Love Babbar DSA/cmake-build-debug
 
-build all: phony module01 module02
+build all: phony module01
 
 # =============================================================================
 # Built-in targets

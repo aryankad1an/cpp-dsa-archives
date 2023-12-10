@@ -15,8 +15,7 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0,
-						1
+						0
 					]
 				}
 			],
@@ -31,8 +30,7 @@
 					"name" : "Love_Babbar_DSA",
 					"targetIndexes" : 
 					[
-						0,
-						1
+						0
 					]
 				}
 			],
@@ -43,13 +41,6 @@
 					"id" : "module01::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-module01-Debug-6c2582a6fe20d9d2e83c.json",
 					"name" : "module01",
-					"projectIndex" : 0
-				},
-				{
-					"directoryIndex" : 0,
-					"id" : "module02::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-module02-Debug-ab7252b7fbec11eba998.json",
-					"name" : "module02",
 					"projectIndex" : 0
 				}
 			]
