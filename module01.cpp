@@ -2,7 +2,11 @@
 
 using namespace std;
 int main() {
-    cout << "This is module 1!" << endl;
-    int nig;
+    // int main is always the entrypoint of C++ program
+    cout << "Namaste Duniya" << endl;
+
+    // concept of data types helps the compiler to differentiate 4 characters(4 bytes) from 1 int(4 bytes too)
+
+
     return 0;
 }
