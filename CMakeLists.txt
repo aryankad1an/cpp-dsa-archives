@@ -5,3 +5,4 @@ set(CMAKE_CXX_STANDARD 23)
 
 add_executable(module01 module01.cpp)
 add_executable(module02 module02.cpp)
+add_executable(module03 module03.cpp)
