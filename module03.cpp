@@ -21,5 +21,26 @@ int main(){
     thus ~4 = -4
      */
 
+    /*
+     SOME GOOD OUTPUT SCENARIO(S)
+     */
+
+    int a, b=1;
+    a=10;
+    if (++a)
+        std::cout << b << std::endl; // this will be displayed
+    else
+        std::cout << ++b << std::endl;
+
+
+    /*
+     FOR LOOP(Complex One)
+     */
+    int j = 1;
+    for(int i = 0; i >=0 && j >= 1; i--, j--){
+        std::cout << i << " " << j << std::endl;
+    }
     return 0;
+
+
 }
