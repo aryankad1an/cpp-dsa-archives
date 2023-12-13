@@ -40,6 +40,16 @@ int main(){
     for(int i = 0; i >=0 && j >= 1; i--, j--){
         std::cout << i << " " << j << std::endl;
     }
+
+    /*
+     SCOPE OF VARIABLES: Already Done in Core C++
+     */
+
+    /*
+     OPERATOR PRECEDENCE: Refer to DOCS
+     */
+
+
     return 0;
 
 
