@@ -51,7 +51,7 @@ build cmake_object_order_depends_target_module01: phony || CMakeFiles/module01.d
 
 build CMakeFiles/module01.dir/module01.cpp.o: CXX_COMPILER__module01_Debug /Users/aryan/Documents/Computer$ Science$ Stuff/The$ C++/Love$ Babbar$ DSA/module01.cpp || cmake_object_order_depends_target_module01
   DEP_FILE = CMakeFiles/module01.dir/module01.cpp.o.d
-  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -fcolor-diagnostics -std=gnu++2b
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -fcolor-diagnostics -std=gnu++2b
   OBJECT_DIR = CMakeFiles/module01.dir
   OBJECT_FILE_DIR = CMakeFiles/module01.dir
 
@@ -64,7 +64,7 @@ build CMakeFiles/module01.dir/module01.cpp.o: CXX_COMPILER__module01_Debug /User
 # Link the executable module01
 
 build module01: CXX_EXECUTABLE_LINKER__module01_Debug CMakeFiles/module01.dir/module01.cpp.o
-  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk
   OBJECT_DIR = CMakeFiles/module01.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -82,7 +82,7 @@ build cmake_object_order_depends_target_module02: phony || CMakeFiles/module02.d
 
 build CMakeFiles/module02.dir/module02.cpp.o: CXX_COMPILER__module02_Debug /Users/aryan/Documents/Computer$ Science$ Stuff/The$ C++/Love$ Babbar$ DSA/module02.cpp || cmake_object_order_depends_target_module02
   DEP_FILE = CMakeFiles/module02.dir/module02.cpp.o.d
-  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -fcolor-diagnostics -std=gnu++2b
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -fcolor-diagnostics -std=gnu++2b
   OBJECT_DIR = CMakeFiles/module02.dir
   OBJECT_FILE_DIR = CMakeFiles/module02.dir
 
@@ -95,7 +95,7 @@ build CMakeFiles/module02.dir/module02.cpp.o: CXX_COMPILER__module02_Debug /User
 # Link the executable module02
 
 build module02: CXX_EXECUTABLE_LINKER__module02_Debug CMakeFiles/module02.dir/module02.cpp.o
-  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk
   OBJECT_DIR = CMakeFiles/module02.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -113,7 +113,7 @@ build cmake_object_order_depends_target_module03: phony || CMakeFiles/module03.d
 
 build CMakeFiles/module03.dir/module03.cpp.o: CXX_COMPILER__module03_Debug /Users/aryan/Documents/Computer$ Science$ Stuff/The$ C++/Love$ Babbar$ DSA/module03.cpp || cmake_object_order_depends_target_module03
   DEP_FILE = CMakeFiles/module03.dir/module03.cpp.o.d
-  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -fcolor-diagnostics -std=gnu++2b
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -fcolor-diagnostics -std=gnu++2b
   OBJECT_DIR = CMakeFiles/module03.dir
   OBJECT_FILE_DIR = CMakeFiles/module03.dir
 
@@ -126,7 +126,7 @@ build CMakeFiles/module03.dir/module03.cpp.o: CXX_COMPILER__module03_Debug /User
 # Link the executable module03
 
 build module03: CXX_EXECUTABLE_LINKER__module03_Debug CMakeFiles/module03.dir/module03.cpp.o
-  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk
   OBJECT_DIR = CMakeFiles/module03.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -144,7 +144,7 @@ build cmake_object_order_depends_target_module04: phony || CMakeFiles/module04.d
 
 build CMakeFiles/module04.dir/module04.cpp.o: CXX_COMPILER__module04_Debug /Users/aryan/Documents/Computer$ Science$ Stuff/The$ C++/Love$ Babbar$ DSA/module04.cpp || cmake_object_order_depends_target_module04
   DEP_FILE = CMakeFiles/module04.dir/module04.cpp.o.d
-  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -fcolor-diagnostics -std=gnu++2b
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -fcolor-diagnostics -std=gnu++2b
   OBJECT_DIR = CMakeFiles/module04.dir
   OBJECT_FILE_DIR = CMakeFiles/module04.dir
 
@@ -157,12 +157,43 @@ build CMakeFiles/module04.dir/module04.cpp.o: CXX_COMPILER__module04_Debug /User
 # Link the executable module04
 
 build module04: CXX_EXECUTABLE_LINKER__module04_Debug CMakeFiles/module04.dir/module04.cpp.o
-  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk
   OBJECT_DIR = CMakeFiles/module04.dir
   POST_BUILD = :
   PRE_LINK = :
   TARGET_FILE = module04
   TARGET_PDB = module04.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target module05
+
+
+#############################################
+# Order-only phony target for module05
+
+build cmake_object_order_depends_target_module05: phony || CMakeFiles/module05.dir
+
+build CMakeFiles/module05.dir/module05.cpp.o: CXX_COMPILER__module05_Debug /Users/aryan/Documents/Computer$ Science$ Stuff/The$ C++/Love$ Babbar$ DSA/module05.cpp || cmake_object_order_depends_target_module05
+  DEP_FILE = CMakeFiles/module05.dir/module05.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -fcolor-diagnostics -std=gnu++2b
+  OBJECT_DIR = CMakeFiles/module05.dir
+  OBJECT_FILE_DIR = CMakeFiles/module05.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target module05
+
+
+#############################################
+# Link the executable module05
+
+build module05: CXX_EXECUTABLE_LINKER__module05_Debug CMakeFiles/module05.dir/module05.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk
+  OBJECT_DIR = CMakeFiles/module05.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = module05
+  TARGET_PDB = module05.dbg
 
 
 #############################################
@@ -198,7 +229,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/aryan/Documents/Computer Science Stuff/The C++/Love Babbar DSA/cmake-build-debug
 
-build all: phony module01 module02 module03 module04
+build all: phony module01 module02 module03 module04 module05
 
 # =============================================================================
 # Built-in targets
