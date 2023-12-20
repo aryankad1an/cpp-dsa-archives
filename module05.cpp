@@ -22,5 +22,11 @@ int main(){
     // call by value: see core notes :)
 
 
+
+    // arrays in C++
+    // array is {continuous memory allocated} collection of data
+    // refer to C++ core
+    int arr_2[10]; // all the values initialised as garbage walue
+    int arr[10] = {0}; // all the values initialised as zero
     return 0;
 }
