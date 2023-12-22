@@ -5,8 +5,9 @@ using namespace std;
 // arrays with functions
 void printArray(int arr[], int size){
     for (int i = 0; i < size; ++i) {
-        cout<<arr[i]<<endl;
+        cout<<arr[i]<<" ";
     }
+    cout<<endl;
 }
 
 void reverseArray(int arr[], int size){
@@ -126,5 +127,28 @@ int main(){
 
     // similarly with k = j+1 loop we can implement triplet sum
 
+    cout << "---" << endl;
+
+    // sort 0's and 1's
+    int zeroArr[] = {0, 1, 0, 1, 1, 1, 0};
+
+    // solving using two pointer approach
+    int i = 0; //left
+    int j = size(zeroArr) - 1; //right
+    while(i < j){
+        while(zeroArr[i] == 0 && i < j){
+            i++;
+        }
+        while(zeroArr[j] == 1 && i < j){
+            j--;
+        }
+        while(zeroArr[i]==1 && zeroArr[j]==0 && i < j){
+            swap(zeroArr[i], zeroArr[j]);
+            i++;
+            j--;
+        }
+
+    }
+    printArray(zeroArr, size(zeroArr));
     return 0;
 }
