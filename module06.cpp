@@ -1,4 +1,6 @@
 #include<iostream>
+#include<vector>
+
 using namespace std;
 // arrays with functions
 void printArray(int arr[], int size){
@@ -49,13 +51,38 @@ int duplicateElementFromArray(int arr[], int size){
     return ans;
 }
 
+vector<int> intersectionOfArrays(int arr1[], int arr2[], int size1, int size2){
+    vector<int> ans;
+    int i = 0; int j = 0;
+
+    /*
+     EXAMPLE:
+     {3, 3, 3, 3, 4 ,5 ,6 } ⋂ {1 , 2, 3, 3} = {3, 3}
+     */
+
+    // two pointer approach of this problem
+    while(i<size1 && j<size2){
+        if(arr1[i] == arr2[j]){
+            ans.push_back(arr1[i]);
+            i++;j++; // to prevent duplicate result
+        }
+        else if(arr1[i] < arr2[j]){
+            i++; // as arrays are sorted and there is no need to check more elements if its smaller than the smaller element
+        }
+        else{
+            j++; // same reason as above
+        }
+    }
+    return ans;
+}
+
 int main(){
     int nums[5] = {3, 4, 5, 6, 2};
     printArray(nums, size(nums));
 
     cout << "---" << endl;
     // note that there is always call by reference for arrays
-    // it is because when we pass the arrays to function, we actualy pass the address of first element dawg
+    // it is because when we pass the arrays to function, we actually pass the address of first element dawg
 
 
     // reversing an array
@@ -72,6 +99,17 @@ int main(){
 
     // finding duplicates in arrays(of size n) where there is every element from the set of natural numbers [1, n-1] and one of the element is duplicated
     int findDuplicate[] = {1, 2, 3, 4, 5, 6, 4};
-    cout << duplicateElementFromArray(findDuplicate, size(findDuplicate));
+    cout << duplicateElementFromArray(findDuplicate, size(findDuplicate)) << endl;
+
+    cout << "---" << endl;
+    // intersection of 2 arrays(common elements) (both arrays are sorted)
+    int arr1[] = {1,2,3};
+    int arr2[] = {3, 4};
+    vector<int> intersection = intersectionOfArrays(arr1, arr2, size(arr1), size(arr2));
+    for (int i = 0; i < size(intersection); ++i) {
+        cout << intersection[i] << " ";
+    }
+    cout << endl;
+
     return 0;
 }
