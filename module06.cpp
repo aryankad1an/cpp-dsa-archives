@@ -111,5 +111,19 @@ int main(){
     }
     cout << endl;
 
+    cout << "---" << endl;
+    //to find pairs with same sum
+    const int REQ_SUM = 5;
+    int pairArr[] = {1, 3, 2, 5, 6, 0};
+
+    for (int i = 0; i < size(pairArr); ++i) {
+        for (int j = i+1; j < size(pairArr); ++j) {
+            if(pairArr[i] + pairArr[j] == REQ_SUM){
+                cout << pairArr[i] << ", " << pairArr[j] << endl;
+            }
+        }
+    }
+
+
     return 0;
 }
