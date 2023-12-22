@@ -124,6 +124,7 @@ int main(){
         }
     }
 
+    // similarly with k = j+1 loop we can implement triplet sum
 
     return 0;
 }
