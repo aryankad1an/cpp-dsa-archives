@@ -28,6 +28,27 @@ int uniqueElementFromArray(int arr[], int size){
     return result;
 }
 
+int duplicateElementFromArray(int arr[], int size){
+    /*
+     According to the problem statement
+     if the size of array is n we can xor the array with numbers from 1...n-1
+     the resultant left will be out answer
+
+     as:
+     (1^2^3^4....^D^...n-1^D)^(1^2^3^4....^D^...n-1) equals
+     1^1^2^2^3^3....^D^D^...^(n-1)^(n-1)^D equals
+     D
+     */
+    int ans = 0;
+    for (int i = 0; i < size; ++i) {
+        ans = ans ^ arr[i];
+    }
+    for (int i = 1; i <= size-1; ++i) {
+        ans = ans ^ i;
+    }
+    return ans;
+}
+
 int main(){
     int nums[5] = {3, 4, 5, 6, 2};
     printArray(nums, size(nums));
@@ -46,5 +67,11 @@ int main(){
     // finding unique in an array with duplicates in pairs
     int findUnique[] = {4, 5, 5, 3, 4, 3, 69};
     cout << uniqueElementFromArray(findUnique, 7) << endl;
+
+    cout << "---" << endl;
+
+    // finding duplicates in arrays(of size n) where there is every element from the set of natural numbers [1, n-1] and one of the element is duplicated
+    int findDuplicate[] = {1, 2, 3, 4, 5, 6, 4};
+    cout << duplicateElementFromArray(findDuplicate, size(findDuplicate));
     return 0;
 }
