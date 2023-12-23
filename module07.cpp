@@ -86,5 +86,9 @@ int main(){
     cout << leftMostOccurrence(arr, size(arr), 3) << endl;
     cout << rightMostOccurrence(arr, size(arr), 3) << endl;
 
+    // total no of occurences = last index - first index + 1 (for sorted arrays only)
+
+
+
     return 0;
 }
