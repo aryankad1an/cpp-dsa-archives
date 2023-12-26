@@ -63,6 +63,40 @@ int rightMostOccurrence(int arr[], int size, int key){
     return ans;
 }
 
+int getPivot(int arr[], int n){
+    /*
+     Graph of rotated array:
+     |
+     |
+     |      9
+     | [a]7
+     |
+     |                  3
+     |              2
+     |       [b]1
+     |_______________________
+     */
+
+    // we are considering 1 to be pivot element
+    int s = 0;
+    int e = n -1;
+    int mid = s + (e-s)/2;
+
+    while(s < e){
+        if(arr[mid] >= arr[0]){
+            // mid lies in the line [a] (see graph)
+            // this we will move start position
+            s = mid + 1;
+        }
+        else{
+            e = mid; // we are not saying e = mid-1 as it can result in problems
+            // let mid is at 1, so mid-1 would be in line [a] that would ruin our answer
+        }
+        mid = s + (e-s)/2;
+    }
+    return s; // dry run to know why we returned s instead of e
+}
+
 int main(){
     // binary search algorithm
     // NOTE: array needs to be sorted(monotonic order)(we will consider in ascending order)
@@ -86,7 +120,41 @@ int main(){
     cout << leftMostOccurrence(arr, size(arr), 3) << endl;
     cout << rightMostOccurrence(arr, size(arr), 3) << endl;
 
-    // total no of occurences = last index - first index + 1 (for sorted arrays only)
+    // total no of occureences = last index - first index + 1 (for sorted arrays only)
+
+    // peak index of mountain array(see leetcode)
+
+    // find pivot in an array(u will be given a sorted and rotated array as input){good imagination}
+
+    /*
+     To find a pivot, plot the sorted array in graph and find the point of non monotonicity
+
+     array: {1, 2, 3, 7, 9}
+     rotated: {7, 9, 1, 2, 3}
+     Graph of original array:
+     |
+     |
+     |                  9
+     |              7
+     |          3
+     |      2
+     |  1
+     |________________________
+
+     Graph of rotated array:
+     |
+     |
+     |      9
+     |   7
+     |
+     |                  3
+     |              2
+     |          1
+     |_______________________
+     */
+
+    int a[] = {7, 9, 1000, 1, 2, 3, 4, 5};
+    cout << "Pivot is at index " << getPivot(a, size(a));
 
 
 
