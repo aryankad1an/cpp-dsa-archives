@@ -23,6 +23,23 @@ int binarySearch(int arr[], int size, int key){
     return -1; // if not found
 }
 
+int binarySearchCustomStartEnd(int arr[], int start, int end, int key){
+    while(start <= end){
+        int mid = start + ((end - start)/2); // prevents out of range for integer
+        if(arr[mid] == key){
+            return mid;
+        }
+        if(key > arr[mid]){
+            start = mid + 1;
+        }
+        else{
+            end = mid - 1;
+        }
+        //mid = start + ((end - start)/2);
+    }
+    return -1; // if not found
+}
+
 int leftMostOccurrence(int arr[], int size, int key){
       int s = 0;
       int e = size - 1;
@@ -97,6 +114,19 @@ int getPivot(int arr[], int n){
     return s; // dry run to know why we returned s instead of e
 }
 
+int binarySearchRotated(int arr[], int n, int key)
+{
+    int pivot = getPivot(arr, n);
+    if(key > arr[pivot] && key <= arr[n-1]){
+        // binary search on the second line
+        return binarySearchCustomStartEnd(arr, pivot, n-1, key);
+    }
+    else{
+        // binary search on first line
+        return binarySearchCustomStartEnd(arr, 0, pivot-1, key);
+    }
+}
+
 int main(){
     // binary search algorithm
     // NOTE: array needs to be sorted(monotonic order)(we will consider in ascending order)
@@ -154,9 +184,9 @@ int main(){
      */
 
     int a[] = {7, 9, 1000, 1, 2, 3, 4, 5};
-    cout << "Pivot is at index " << getPivot(a, size(a));
+    cout << "Pivot is at index " << getPivot(a, size(a)) << endl;
 
-
-
+    // search in a rotated sorted array(array like above)
+    cout << binarySearchRotated(a, size(a), 2) << endl;
     return 0;
 }
