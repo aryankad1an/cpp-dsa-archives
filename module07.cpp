@@ -285,5 +285,7 @@ int main(){
      */
     int arr_[4] = {10, 20, 30, 40};
     cout << "Maximum sum is " << bookAllocationSolution(arr_, 4, 2) << endl;
+
+    // similar problem to this ^: painter's partition problem(do urself if u see)
     return 0;
 }
