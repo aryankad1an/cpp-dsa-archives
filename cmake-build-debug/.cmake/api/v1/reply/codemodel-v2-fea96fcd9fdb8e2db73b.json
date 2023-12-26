@@ -1,0 +1,132 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Love_Babbar_DSA",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "module01::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-module01-Debug-a89bacede2e7c3dda6c3.json",
+					"name" : "module01",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "module02::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-module02-Debug-5fd6054414d9b9e92056.json",
+					"name" : "module02",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "module03::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-module03-Debug-e3bd8709e7c491e56b33.json",
+					"name" : "module03",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "module04::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-module04-Debug-45927063818aa95ff24a.json",
+					"name" : "module04",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "module05::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-module05-Debug-293b31378f313f18c196.json",
+					"name" : "module05",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "module06::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-module06-Debug-b5422a3eb1670492f06f.json",
+					"name" : "module06",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "module07::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-module07-Debug-1c272e9c39ee56286abf.json",
+					"name" : "module07",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "module08::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-module08-Debug-c64a08e347909483e738.json",
+					"name" : "module08",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "module09::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-module09-Debug-82dd906a68bc5a919c5b.json",
+					"name" : "module09",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/aryan/Documents/Computer Science Stuff/The C++/Love Babbar DSA/cmake-build-debug",
+		"source" : "/Users/aryan/Documents/Computer Science Stuff/The C++/Love Babbar DSA"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}
