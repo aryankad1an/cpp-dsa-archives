@@ -7,6 +7,7 @@
 #include<queue>
 #include<set>
 #include<map>
+#include<algorithm>
 
 using namespace std;
 int main(){
@@ -121,5 +122,23 @@ int main(){
      It uses a binary search tree internally, providing logarithmic
      time complexity for search, insertion, and deletion operations.
      */
+
+    /*
+     STL ALGORITHMS
+     */
+    int arr[] = {5, 6, 7, 69, 21, -32, 8, 10, 12};
+    sort(arr, arr+size(arr)); // sorts the array, based on intro sort(time complexity: O(nlog(n))
+    cout << binary_search(arr, arr+size(arr), 8) << endl; // returns boolean
+    // here arr is an iterator pointing towards first element, for vector it will be vector.begin()
+    // arr+size(arr) is an iterator pointing towards last element, for vector it will be vector.end()
+
+    reverse(arr, arr+size(arr)); // reversed the array
+    for(auto i: arr){ // auto means automatic data type declaration
+        cout << i << " ";
+    }
+    cout << endl;
+
+    // do when u see: rotate function
+
     return 0;
 }
