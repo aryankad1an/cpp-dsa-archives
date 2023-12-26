@@ -5,6 +5,7 @@
 #include<list>
 #include<stack>
 #include<queue>
+#include<set>
 
 using namespace std;
 int main(){
@@ -80,6 +81,16 @@ int main(){
     q.push("Babbar");
     q.push("Kumar");
     cout << "Front Element -> " << q.front() << endl;
+
+    // sets STL{stores only unique elements}
+    set<int> se;
+    se.insert(4);
+    se.insert(6);
+    se.insert(9);
+    se.insert(0);
+
+    cout << se.contains(6) << endl; //boolean (O(logn) complexity)
+
 
     return 0;
 }
