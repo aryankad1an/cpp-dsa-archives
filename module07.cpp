@@ -127,6 +127,25 @@ int binarySearchRotated(int arr[], int n, int key)
     }
 }
 
+int sqrtBinarySearch(int n){
+    int start = 1;
+    int end = n;
+    int ans = -1;
+    while(start <= end){
+        int mid = start + (end-start)/2;
+        long long int square = mid * mid;
+        if(square == n)
+            return mid;
+        if(square < n){
+            ans = mid; // this is considering that we will not consider the floating point of root, eg. 5.6 root will be treated as 5
+            start = mid + 1;
+        }
+        else
+            end = mid - 1;
+    }
+    return ans;
+}
+
 int main(){
     // binary search algorithm
     // NOTE: array needs to be sorted(monotonic order)(we will consider in ascending order)
@@ -188,5 +207,10 @@ int main(){
 
     // search in a rotated sorted array(array like above)
     cout << binarySearchRotated(a, size(a), 2) << endl;
+
+    // square root using binary search
+    cout << sqrtBinarySearch(7) << endl;
+
+
     return 0;
 }
