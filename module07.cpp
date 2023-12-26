@@ -287,5 +287,8 @@ int main(){
     cout << "Maximum sum is " << bookAllocationSolution(arr_, 4, 2) << endl;
 
     // similar problem to this ^: painter's partition problem(do urself if u see)
+
+    // future allocated problem: aggressive cow's problem(do and understand the algorithm in detail)
+    // video ref: https://youtu.be/YTTdLgyqOLY?feature=shared
     return 0;
 }
