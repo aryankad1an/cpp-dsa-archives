@@ -24,6 +24,10 @@ int main(){
     }
     cout << endl;
 
+    // space complexity: O(1) [no extra variables created]
+    // time complexity(worst case): O(n^2) [nested for loop]
+    // best case time complexity: O(n^2) [we will still do the comparisons, no matter the new variables created]
 
+    // use case: small array size
     return 0;
 }
