@@ -4,6 +4,7 @@
 #include<deque>
 #include<list>
 #include<stack>
+#include<queue>
 
 using namespace std;
 int main(){
@@ -65,12 +66,20 @@ int main(){
     l.push_back(4);
     l.push_front(8);
 
-    // stack STL
+    // stack STL [Last in first out]
     stack<string> s;
     s.push("Love");
     s.push("Babbar");
     s.push("Kumar");
     cout << "Top Element -> " << s.top() << endl;
     s.pop();
+
+    //queue STL [first in first out]
+    queue<string> q;
+    q.push("Love");
+    q.push("Babbar");
+    q.push("Kumar");
+    cout << "Front Element -> " << q.front() << endl;
+
     return 0;
 }
