@@ -3,6 +3,7 @@
 #include<vector>
 #include<deque>
 #include<list>
+#include<stack>
 
 using namespace std;
 int main(){
@@ -63,5 +64,13 @@ int main(){
     list<int> l;
     l.push_back(4);
     l.push_front(8);
+
+    // stack STL
+    stack<string> s;
+    s.push("Love");
+    s.push("Babbar");
+    s.push("Kumar");
+    cout << "Top Element -> " << s.top() << endl;
+    s.pop();
     return 0;
 }
