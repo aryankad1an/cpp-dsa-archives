@@ -211,6 +211,7 @@ int main(){
     // square root using binary search
     cout << sqrtBinarySearch(7) << endl;
 
-
+    // finding exact square root using binary search
+    // do using bruteforce lol :/
     return 0;
 }
