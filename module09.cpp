@@ -1,6 +1,7 @@
 #include<iostream>
 #include<array>
 #include<vector>
+#include<deque>
 
 using namespace std;
 int main(){
@@ -41,5 +42,21 @@ int main(){
         cout << i <<" ";
     }
     cout << endl;
+
+
+    //Deque (both ended insertions and deletions) [complex implementation unlike vector and arrays]
+    deque<int> d;
+    d.push_back(4);
+    d.push_back(2);
+    d.push_back(1);
+    d.push_back(5);
+    d.push_front(8);
+    d.push_front(0);
+    d.push_front(57);
+    d.push_front(9);
+    d.pop_back();
+    d.pop_front();
+    cout << d[4] <<endl;
+
     return 0;
 }
