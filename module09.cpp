@@ -6,6 +6,7 @@
 #include<stack>
 #include<queue>
 #include<set>
+#include<map>
 
 using namespace std;
 int main(){
@@ -91,6 +92,34 @@ int main(){
 
     cout << se.contains(6) << endl; //boolean (O(logn) complexity)
 
+    // maps STL
+    map<string, int> ages;
 
+    // Insert elements
+    ages["Alice"] = 25;
+    ages["Bob"] = 30;
+    ages["Charlie"] = 20;
+
+    // Access elements
+    cout << "Alice's age: " << ages["Alice"] << endl;
+
+    // Iterating through elements
+    for (auto it = ages.begin(); it != ages.end(); ++it) {
+        cout << it->first << ": " << it->second << endl;
+    }
+
+    // Finding elements
+    auto iter = ages.find("Bob");
+    if (iter != ages.end()) {
+        cout << "Bob's age found: " << iter->second << endl;
+    }
+
+    // Deletion
+    ages.erase("Charlie");
+    /*
+     Searching for elements using a key is very efficient.
+     It uses a binary search tree internally, providing logarithmic
+     time complexity for search, insertion, and deletion operations.
+     */
     return 0;
 }
