@@ -146,6 +146,49 @@ int sqrtBinarySearch(int n){
     return ans;
 }
 
+bool isPossibleSol(int arr[], int n, int m, int mid){
+    int studentCount = 1;
+    int pageSum = 0;
+
+    for (int i = 0; i < n; ++i) {
+        if(pageSum+arr[i] <= mid){
+            pageSum += arr[i];
+        }
+        else{
+            studentCount++;
+            if( studentCount > m || arr[i] > mid){
+                return false;
+            }
+            pageSum = arr[i];
+        }
+    }
+    return true;
+}
+
+int bookAllocationSolution(int arr[], int n, int m){
+    int s = 0;
+    int sum = 0;
+    int ans = -1;
+    for (int i = 0; i < n; ++i) {
+        sum += arr[i];
+    }
+    int e = sum;
+    // dry run to know why this works
+    int mid = s + (e-s)/2;
+    while(s <= e){
+        // not that we have to find the minimum maximum sum
+        if(isPossibleSol(arr, n, m, mid)){
+            ans = mid;
+            e = mid - 1;
+        }
+        else{
+            s = mid + 1;
+        }
+        mid = s + (e-s)/2;
+    }
+    return mid;
+}
+
 int main(){
     // binary search algorithm
     // NOTE: array needs to be sorted(monotonic order)(we will consider in ascending order)
@@ -213,5 +256,34 @@ int main(){
 
     // finding exact square root using binary search
     // do using bruteforce lol :/
+
+    // Book Allocation Problem
+
+    /*
+    Problem Statement:
+
+    Given an array 'arr' of integer numbers, length of arr is n, 'arr[i]' represents the number of pages in the 'i-th' book.
+    There are 'm' number of students, and the task is to allocate all the books to the students.
+    Allocate books in such a way that:
+        1. Each student gets at least one book.
+        2. Each book should be allocated to only one student.
+        3. Book allocation should be in a contiguous manner.
+    You have to allocate the book to 'm' students such that the maximum number of pages assigned to a student is minimum.
+    Find max no of pages assigned to 1 student
+    If the allocation of books is not possible, return -1.
+
+    Example: Array of Books -> [10, 20, 30, 40] No of Students -> 2
+
+    Ways of allocating books to 2 students(contiguous way only):
+
+    Student 1                 |   Student 2
+    10               :10P     |   20  30  40 :90P{max}
+    10  20           :30P     |   30  40     :70P{max}
+    10 20 30         :60P{max}|   40         :40P
+
+     The minimum max value is 60 here, thus the minimum max value is 60
+     */
+    int arr_[4] = {10, 20, 30, 40};
+    cout << "Maximum sum is " << bookAllocationSolution(arr_, 4, 2) << endl;
     return 0;
 }
