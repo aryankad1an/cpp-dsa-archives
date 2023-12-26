@@ -2,6 +2,7 @@
 #include<array>
 #include<vector>
 #include<deque>
+#include<list>
 
 using namespace std;
 int main(){
@@ -58,5 +59,9 @@ int main(){
     d.pop_front();
     cout << d[4] <<endl;
 
+    // List STL
+    list<int> l;
+    l.push_back(4);
+    l.push_front(8);
     return 0;
 }
