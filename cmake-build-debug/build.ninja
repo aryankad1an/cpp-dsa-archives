@@ -350,6 +350,37 @@ build module10: CXX_EXECUTABLE_LINKER__module10_Debug CMakeFiles/module10.dir/mo
   TARGET_FILE = module10
   TARGET_PDB = module10.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target module11
+
+
+#############################################
+# Order-only phony target for module11
+
+build cmake_object_order_depends_target_module11: phony || CMakeFiles/module11.dir
+
+build CMakeFiles/module11.dir/module11.cpp.o: CXX_COMPILER__module11_Debug /Users/aryan/Documents/Computer$ Science$ Stuff/The$ C++/Love$ Babbar$ DSA/module11.cpp || cmake_object_order_depends_target_module11
+  DEP_FILE = CMakeFiles/module11.dir/module11.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -fcolor-diagnostics -std=gnu++2b
+  OBJECT_DIR = CMakeFiles/module11.dir
+  OBJECT_FILE_DIR = CMakeFiles/module11.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target module11
+
+
+#############################################
+# Link the executable module11
+
+build module11: CXX_EXECUTABLE_LINKER__module11_Debug CMakeFiles/module11.dir/module11.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk
+  OBJECT_DIR = CMakeFiles/module11.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = module11
+  TARGET_PDB = module11.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -384,7 +415,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/aryan/Documents/Computer Science Stuff/The C++/Love Babbar DSA/cmake-build-debug
 
-build all: phony module01 module02 module03 module04 module05 module06 module07 module08 module09 module10
+build all: phony module01 module02 module03 module04 module05 module06 module07 module08 module09 module10 module11
 
 # =============================================================================
 # Built-in targets
