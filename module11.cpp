@@ -41,5 +41,11 @@ int main(){
         }
         cout << rev << endl;
     }
+
+    // getting a whole sentence as input
+    // we can do it using cin.getline(refer to docs)
+
+    // strcmp strcpy strlen functions: just like C language
+
     return 0;
 }
