@@ -196,6 +196,7 @@ int main(){
 
     // binary search of 2D array
     // time complexity: O(log(m*n))
+    // space complexity: O(1)
     {
         // Step 1: Flatten the 2D array to linear array
         // Step 2: Do binary search in linear array
@@ -231,4 +232,8 @@ int main(){
 
         cout << endl;
     }
+
+    // Binary search Part 2
+    // See Leetcode problem 240
+
 }
