@@ -217,6 +217,7 @@ int main(){
             int mid = (left + right) / 2;
             if(arr2D[mid] == target){
                 cout << "Found at index of 1D array: " << mid << endl;
+                // find row and col with 1D index
                 cout << "Row: " << mid / col + 1 << " Col: " << mid % col + 1 << endl;
                 break;
             }
