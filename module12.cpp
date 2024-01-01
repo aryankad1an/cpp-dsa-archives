@@ -98,6 +98,7 @@ int main(){
     cout<<endl;
     cout<<"------------------"<<endl;
     // spiral print of 2D array starting from top left
+    // time complexity: O(m*n)
     {
         /*
          For 3x3:
@@ -150,6 +151,47 @@ int main(){
             }
             dir = (dir + 1) % 4;
         }
+    }
+
+    cout<<endl;
+    cout<<"------------------"<<endl;
+
+    // rotate 2D array by 90 degree
+    // time complexity: O(m*n)
+    {
+        /*
+         [1, 2, 3]
+         [4, 5, 6]
+         [7, 8, 9]
+
+         Rotated By 90 Degree:
+         [7, 4, 1]
+         [8, 5, 2]
+         [9, 6, 3]
+         */
+
+        // transposing the array
+        for(int i = 0; i < row; i++){
+            for(int j = i; j < col; j++){
+                swap(arr[i][j], arr[j][i]);
+            }
+        }
+        // reversing each row
+        for(int i = 0; i < row; i++){
+            // left to right
+            for(int j = 0; j < col / 2; j++){
+                swap(arr[i][j], arr[i][col - 1 - j]);
+            }
+        }
+
+        // printing arr
+        for(int i = 0; i < row; i++){
+            for(int j = 0; j < col; j++){
+                cout << arr[i][j] << " ";
+            }
+            cout << endl;
+        }
+
     }
 
 }
