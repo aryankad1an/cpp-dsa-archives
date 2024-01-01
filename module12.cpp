@@ -100,34 +100,48 @@ int main(){
     // spiral print of 2D array starting from top left
     {
         /*
+         For 3x3:
          [1, 2, 3]
          [4, 5, 6]
          [7, 8, 9]
 
          Spiral Print: [1, 2, 3, 6, 9, 8, 7, 4, 5]
+
+         For 4x4:
+         [1, 2, 3, 4]
+         [5, 6, 7, 8]
+         [9, 10, 11, 12]
+         [13, 14, 15, 16]
+
+         Spiral Print: [1, 2, 3, 4, 8, 12, 16, 15, 14, 13, 9, 5, 6, 7, 11, 10]
          */
 
         int top = 0, bottom = row - 1, left = 0, right = col - 1;
+        // 0 = right, 1 = down, 2 = left, 3 = up
         int dir = 0;
         while(top <= bottom && left <= right){
+            // right
             if(dir == 0){
                 for(int i = left; i <= right; i++){
                     cout << arr[top][i] << " ";
                 }
                 top++;
             }
+            // down
             else if(dir == 1){
                 for(int i = top; i <= bottom; i++){
                     cout << arr[i][right] << " ";
                 }
                 right--;
             }
+            // left
             else if(dir == 2){
                 for(int i = right; i >= left; i--){
                     cout << arr[bottom][i] << " ";
                 }
                 bottom--;
             }
+            // up
             else{
                 for(int i = bottom; i >= top; i--){
                     cout << arr[i][left] << " ";
