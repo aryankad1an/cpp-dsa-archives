@@ -194,4 +194,40 @@ int main(){
 
     }
 
+    // binary search of 2D array
+    // time complexity: O(log(m*n))
+    {
+        // Step 1: Flatten the 2D array to linear array
+        // Step 2: Do binary search in linear array
+
+        // Step 1
+        int arr[4][4] = {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}, {13, 14, 15, 16}};
+        int index = 0;
+        int target = 5;
+        int arr2D[row * col];
+        for(int i = 0; i < row; i++){
+            for(int j = 0; j < col; j++){
+                arr2D[index++] = arr[i][j];
+            }
+        }
+
+        // Step 2
+        int left = 0, right = row * col - 1;
+        while(left <= right){
+            int mid = (left + right) / 2;
+            if(arr2D[mid] == target){
+                cout << "Found at index of 1D array: " << mid << endl;
+                cout << "Row: " << mid / col + 1 << " Col: " << mid % col + 1 << endl;
+                break;
+            }
+            else if(arr2D[mid] < target){
+                left = mid + 1;
+            }
+            else{
+                right = mid - 1;
+            }
+        }
+
+        cout << endl;
+    }
 }
